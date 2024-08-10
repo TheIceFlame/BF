@@ -1,0 +1,23 @@
+
+
+
+
+<!--<div class="overlay" [@overlayAnimation]="overlayState">-->
+<!--  <div class="heart"></div>-->
+<!--</div>-->
+
+<div class="container" > <!--[@overlayAnimation]="overlayState"-->
+  <ng-container *ngIf="DidntAcceptYet">
+    {{NoCount}}
+    <img id="main-image" src="assets/output-onlinegiftools.gif" alt="Proposal Image" class="centered">
+    <p class="sentence">Do you wanna be my boyfriend?</p>
+    <div class="buttons">
+      <button id="yes-button" class="button" (click)="onYesClick()">Yes</button>
+      <button id="no-button" class="button" (click)="onNoClick()">No</button>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!DidntAcceptYet">
+    <img id="main-image2" src="assets/output-onlinegiftools%20(1).gif" alt="Proposal Image" class="centered">
+    <p class="sentence">Yeeeeeeeeey !!!</p>
+  </ng-container>
+</div>
